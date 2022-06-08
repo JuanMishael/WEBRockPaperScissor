@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');                       /*for score font*/
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(139deg, rgba(255,255,255,1) 0%, rgba(201,223,227,1) 53%, rgba(151,232,249,1) 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.mainFrame{
+    margin: auto;
+    margin-top: 5vh;
+    max-width: 45vw;
+    background-color: blue;
+    border: 5px solid black;    
+}
+
+.scoreFrame{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 18vh;
+}
+.scoreFrame > div{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 7em;
+}
+.Comscore{
+    background-color: rgb(247, 133, 133);
+}
+.Userscore{
+    background-color:skyblue
+}
+/* EVENT FRAME */
+.wolframe{
+    height: 30vh;
+}
+
+/* BUTTON ROCK PAPER SCISSOR */
+.buttonFrame{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);      /*i use fr to easily fit the 3 button*/
+    height: 30vh
+}
+.buttonFrame > button{
+    border: 1px solid black;
+    padding: 10px
+}
+
+/* RESTART BUTTONy*/
+.restart{
+    background-color: rgb(28, 184, 23);
+    padding: 10px;
+    width: 40vw;
+    margin: auto;
+    display:block;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: initial;
+    font-size: 1.4em;
+}
+@media (max-width:500px){
+    .mainFrame{
+        margin: auto;
+        margin-top: 10vh;
+        max-width: 70vw;
+        background-color: blue;
+        border: 5px solid black;    
+    }
+    .scoreFrame{
+        height: 10vh;
+    }
+    .scoreFrame > div{
+        font-size: 4em;
+    }
+
+    .wolframe{
+        height: 20vh;
+    }
+
+    .buttonFrame{
+        height: 15vh;
+    }
+    .restart{
+        width: 50vw;
+        font-size:initial;
+    }
+}

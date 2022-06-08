@@ -1,0 +1,1 @@
+This is my own created web rockpaperscissor game. Most of the codes used(js code) were inspired on the previous webcalculator program
