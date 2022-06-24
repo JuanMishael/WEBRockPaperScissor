@@ -23,7 +23,11 @@ body {
     background-color: blue;
     border: 5px solid black;    
 }
-
+@media (min-width: 1910px) {
+    .mainFrame{
+        max-width: 40vw;
+    }
+}
 .scoreFrame{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -38,12 +42,35 @@ body {
     background-color: rgb(247, 133, 133);
 }
 .Userscore{
-    background-color:skyblue
+    background-color:skyblue;
 }
 /* EVENT FRAME */
 .wolframe{
     height: 30vh;
+    padding: 20px;
+
 }
+.field{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    height:30vh;
+}
+/* 
+.comAns{
+    background: url(icon/icons8-hand-rock-64.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:rgb(247, 133, 133);
+}
+.userAns{
+    background: url(icon/icons8-sign-language-b-100.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color:skyblue;
+} */
+
 
 /* BUTTON ROCK PAPER SCISSOR */
 .buttonFrame{
@@ -52,8 +79,29 @@ body {
     height: 30vh
 }
 .buttonFrame > button{
-    border: 1px solid black;
-    padding: 10px
+    border: 1px solid black;;
+    background-color: #FFFF;
+}
+.Rock{
+    background: url(icon/icons8-hand-rock-64.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Paper{
+    background: url(icon/icons8-sign-language-b-100.png);
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Scissors{
+    background: url(icon/icons8-hand-peace-100.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.buttonFrame > button:hover{
+    background-color: rgb(231, 231, 231);
 }
 
 /* RESTART BUTTONy*/
